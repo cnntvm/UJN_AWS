@@ -57,21 +57,30 @@ def taf_rkny(): #RKNY 인덱싱하고 문자열 반환
     find_rkny = 'RKNY'
     for i in range(len(list_tafs)):
         if find_rkny in list_tafs[i]:
-            rkny_taf = list_tafs[i]
+            rkny_taf_string = list_tafs[i]
+            rkny_taf_list = rkny_taf_string.split('\n')
+            rkny_taf_list_without = rkny_taf_list[2:]
+            rkny_taf = '\n'.join(s for s in rkny_taf_list_without)
     return rkny_taf
 
 def taf_rkth(): #RKTH 인덱싱하고 문자열 반환        
     find_rkth = 'RKTH'
     for i in range(len(list_tafs)):
         if find_rkth in list_tafs[i]:
-            rkth_taf = list_tafs[i]
+            rkth_taf_string = list_tafs[i]
+            rkth_taf_list = rkth_taf_string.split('\n')
+            rkth_taf_list_without = rkth_taf_list[2:]
+            rkth_taf = '\n'.join(s for s in rkth_taf_list_without)
     return rkth_taf
 
 def taf_rkpu(): #RKPU 인덱싱하고 문자열 반환       
     find_rkpu = 'RKPU'
     for i in range(len(list_tafs)):
         if find_rkpu in list_tafs[i]:
-            rkpu_taf = list_tafs[i]
+            rkpu_taf_string = list_tafs[i]
+            rkpu_taf_list = rkpu_taf_string.split('\n')
+            rkpu_taf_list_without = rkpu_taf_list[2:]
+            rkpu_taf = '\n'.join(s for s in rkpu_taf_list_without)
     return rkpu_taf
 
 #-----------------------------------------------------------------#
